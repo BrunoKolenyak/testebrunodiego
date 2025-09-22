@@ -34,28 +34,37 @@ const ProblemsSection = () => {
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {problems.map((problem, index) => (
-            <div 
-              key={index}
-              className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 transition-all duration-300 transform hover:scale-105"
-              style={{ 
-                borderColor: 'rgba(229, 9, 20, 0.3)' 
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
-              }}
-            >
-              <h3 className="text-white font-bold text-lg mb-4 leading-tight">
-                {problem.title}
-              </h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                {problem.description}
-              </p>
-            </div>
-          ))}
+          {problems.map((problem, index) => {
+            const IconComponent = problem.icon;
+            return (
+              <div 
+                key={index}
+                className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 transition-all duration-300 transform hover:scale-105"
+                style={{ 
+                  borderColor: 'rgba(229, 9, 20, 0.3)' 
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
+                }}
+              >
+                <div className="flex items-center mb-4">
+                  <IconComponent 
+                    className="w-8 h-8 mr-3" 
+                    style={{ color: '#E50914' }}
+                  />
+                </div>
+                <h3 className="text-white font-bold text-lg mb-4 leading-tight">
+                  {problem.title}
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {problem.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
