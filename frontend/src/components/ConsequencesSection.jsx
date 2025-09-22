@@ -11,8 +11,16 @@ const ConsequencesSection = () => {
   ];
 
   return (
-    <section className="bg-gray-900/30 py-20">
-      <div className="container mx-auto px-6">
+    <section 
+      className="relative py-20 bg-gray-900/30"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1606470639126-7fafb3dbf44c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHx5b3V0aCUyMGZvb3RiYWxsfGVufDB8fHx8MTc1ODUzODMwNnww&ixlib=rb-4.1.0&q=85')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
             What Happens If <span style={{ color: '#E50914' }}>Nothing Changes?</span>
