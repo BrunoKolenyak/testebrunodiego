@@ -27,8 +27,16 @@ const ProblemsSection = () => {
   ];
 
   return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto px-6">
+    <section 
+      className="relative bg-black py-20"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://customer-assets.emergentagent.com/job_football-carousel/artifacts/y7911glf_4208.jpg.webp')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
           IS YOUR CHILD <span style={{ color: '#E50914' }}>STRUGGLING WITH:</span>
         </h2>
