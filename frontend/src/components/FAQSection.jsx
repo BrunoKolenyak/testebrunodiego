@@ -23,7 +23,7 @@ const FAQSection = () => {
     },
     {
       question: "Do I get lifetime access?",
-      answer: "The Parents Blueprint is yours forever once downloaded. The Full Method includes one year of platform access with all updates."
+      answer: "The Parents Blueprint is yours forever once downloaded. The Full Method includes one year access to all features including App and course."
     }
   ];
 
