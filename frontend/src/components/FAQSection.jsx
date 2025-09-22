@@ -36,7 +36,7 @@ const FAQSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Got Questions? <span className="text-red-500">We Have Answers!</span>
+            Got Questions? <span style={{ color: '#E50914' }}>We Have Answers!</span>
           </h2>
           <p className="text-xl text-gray-300">
             Everything you need to know about both products and how they can help your child succeed.
@@ -47,7 +47,16 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden hover:border-red-500/30 transition-all duration-300"
+              className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden transition-all duration-300"
+              style={{ 
+                borderColor: 'rgba(229, 9, 20, 0.3)' 
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
+              }}
             >
               <button
                 onClick={() => toggleFAQ(index)}
@@ -57,7 +66,7 @@ const FAQSection = () => {
                   {faq.question}
                 </h3>
                 {openFAQ === index ? (
-                  <ChevronUp className="w-5 h-5 text-red-500 flex-shrink-0" />
+                  <ChevronUp className="w-5 h-5 flex-shrink-0" style={{ color: '#E50914' }} />
                 ) : (
                   <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 )}

@@ -17,7 +17,18 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Parents Blueprint */}
-          <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-red-500/30 transition-all duration-300">
+          <div 
+            className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 transition-all duration-300"
+            style={{ 
+              borderColor: 'rgba(229, 9, 20, 0.3)' 
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
+            }}
+          >
             <div className="text-center mb-8">
               <img
                 src="https://conf-footb-m7dxay.manus.space/assets/parents-blueprint-cover-modern-C3xiYd81.png"
@@ -52,7 +63,16 @@ const ProductsSection = () => {
               ))}
             </ul>
 
-            <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 text-lg font-semibold rounded-lg transition-all duration-300">
+            <Button 
+              className="w-full text-white py-3 text-lg font-semibold rounded-lg transition-all duration-300"
+              style={{ backgroundColor: '#E50914' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = '0.9';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = '1';
+              }}
+            >
               Get The Parents Blueprint
             </Button>
 
@@ -62,9 +82,9 @@ const ProductsSection = () => {
           </div>
 
           {/* Full Method */}
-          <div className="relative bg-gray-900/50 border-2 border-red-500 rounded-xl p-8">
+          <div className="relative bg-gray-900/50 border-2 rounded-xl p-8" style={{ borderColor: '#E50914' }}>
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+              <span className="text-white px-4 py-2 rounded-full text-sm font-bold" style={{ backgroundColor: '#E50914' }}>
                 MOST POPULAR
               </span>
             </div>
@@ -85,7 +105,7 @@ const ProductsSection = () => {
                 <span className="text-2xl text-gray-400 line-through">£289</span>
                 <span className="text-4xl font-bold text-white">£97</span>
               </div>
-              <p className="text-red-500 font-semibold mb-2">Save £192 - Limited Time Offer!</p>
+              <p className="font-semibold mb-2" style={{ color: '#E50914' }}>Save £192 - Limited Time Offer!</p>
               <p className="text-sm text-gray-400">One-time payment • Full year access</p>
             </div>
 
@@ -113,7 +133,16 @@ const ProductsSection = () => {
               </ul>
             </div>
 
-            <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 text-lg font-semibold rounded-lg transition-all duration-300">
+            <Button 
+              className="w-full text-white py-3 text-lg font-semibold rounded-lg transition-all duration-300"
+              style={{ backgroundColor: '#E50914' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = '0.9';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = '1';
+              }}
+            >
               Get The Full Method
             </Button>
 

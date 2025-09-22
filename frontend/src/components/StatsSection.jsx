@@ -21,7 +21,7 @@ const StatsSection = () => {
   ];
 
   const numbers = [
-    { number: "1000+", label: "Families Transformed" },
+    { number: "Real Families", label: "Trusted by" },
     { number: "3-4 Weeks", label: "To See Results" },
     { number: "8-16", label: "Age Range Supported" }
   ];
@@ -40,7 +40,16 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <div 
               key={index}
-              className="text-center p-6 bg-gray-900/30 rounded-xl border border-gray-800 hover:border-red-500/30 transition-all duration-300"
+              className="text-center p-6 bg-gray-900/30 rounded-xl border border-gray-800 transition-all duration-300"
+              style={{ 
+                borderColor: 'rgba(229, 9, 20, 0.3)' 
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
+              }}
             >
               <h3 className="text-xl font-bold text-white mb-4">
                 {stat.title}
@@ -56,7 +65,7 @@ const StatsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {numbers.map((item, index) => (
             <div key={index} className="text-center">
-              <div className="text-5xl lg:text-6xl font-bold text-red-500 mb-2">
+              <div className="text-5xl lg:text-6xl font-bold mb-2" style={{ color: '#E50914' }}>
                 {item.number}
               </div>
               <div className="text-lg text-gray-300 font-medium">
