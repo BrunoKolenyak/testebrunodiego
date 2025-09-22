@@ -72,6 +72,9 @@ const ProductsSection = () => {
               onMouseLeave={(e) => {
                 e.currentTarget.style.opacity = '1';
               }}
+              onClick={() => {
+                window.open('https://www.youthfootballer.com/offers/jQogRjFg/checkout', '_blank');
+              }}
             >
               Get The Parents Blueprint
             </Button>
