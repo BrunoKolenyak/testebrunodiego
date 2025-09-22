@@ -144,6 +144,9 @@ const ProductsSection = () => {
               onMouseLeave={(e) => {
                 e.currentTarget.style.opacity = '1';
               }}
+              onClick={() => {
+                window.open('https://www.youthfootballer.com/offers/FpedL4Pg/checkout', '_blank');
+              }}
             >
               Get The Full Method
             </Button>
