@@ -43,6 +43,9 @@ const HeroSection = () => {
             size="lg" 
             style={{ backgroundColor: '#E50914' }}
             className="hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+            onClick={() => {
+              document.getElementById('products-section')?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
             <Play className="w-5 h-5 mr-2" />
             Choose Your Path Below
