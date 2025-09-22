@@ -20,6 +20,9 @@ const CTASection = () => {
             <Button 
               size="lg" 
               className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+              onClick={() => {
+                window.open('https://www.youthfootballer.com/offers/jQogRjFg/checkout', '_blank');
+              }}
             >
               Get Parents Blueprint - £47
             </Button>
@@ -33,6 +36,9 @@ const CTASection = () => {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.opacity = '1';
+              }}
+              onClick={() => {
+                window.open('https://www.youthfootballer.com/offers/FpedL4Pg/checkout', '_blank');
               }}
             >
               Get Full Method - £97
