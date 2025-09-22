@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { Play } from "lucide-react";
+import { Play, Star, CheckCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
