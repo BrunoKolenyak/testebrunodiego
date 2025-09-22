@@ -15,6 +15,13 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
       </div>
 
+      {/* Decorative floating elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-4 h-4 rounded-full opacity-20 animate-pulse" style={{ backgroundColor: '#E50914' }}></div>
+        <div className="absolute top-40 right-20 w-6 h-6 rounded-full opacity-30 animate-pulse delay-500" style={{ backgroundColor: '#E50914' }}></div>
+        <div className="absolute bottom-40 left-20 w-3 h-3 rounded-full opacity-25 animate-pulse delay-1000" style={{ backgroundColor: '#E50914' }}></div>
+      </div>
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 pt-24 pb-12 min-h-screen flex items-center">
         <div className="max-w-3xl">
