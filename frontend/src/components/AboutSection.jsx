@@ -2,8 +2,17 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto px-6">
+    <section className="relative bg-black py-20 overflow-hidden">
+      {/* Decorative background element */}
+      <div 
+        className="absolute right-0 top-0 w-1/3 h-full opacity-5"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1655141199464-cdb981639a5b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHxjb25maWRlbnQlMjBmb290YmFsbGVyfGVufDB8fHx8MTc1ODUzODMxMXww&ixlib=rb-4.1.0&q=85')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      ></div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             A UNIQUE APPROACH FROM SOMEONE WHO{" "}
