@@ -6,17 +6,11 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-center">
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E50914' }}>
-              <img 
-                src="https://customer-assets.emergentagent.com/job_football-carousel/artifacts/zgo4nwxj_final-all-red-logo.png"
-                alt="The Confident Footballer Logo"
-                className="w-6 h-6 object-contain"
-                style={{
-                  mixBlendMode: 'screen',
-                  filter: 'brightness(1.2) contrast(1.1)'
-                }}
-              />
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_football-carousel/artifacts/fcmzcljo_Copy%20of%20Copy%20of%20Copy%20of%20Red%20Black%20Modern%20Gradient%20Time%20Management%20Tips%20Instagram%20Carousel%20.png"
+              alt="The Confident Footballer Logo"
+              className="w-8 h-8 object-contain"
+            />
             <span className="text-white font-medium text-sm">
               The #1 Mindset Programme for Young Footballers
             </span>
