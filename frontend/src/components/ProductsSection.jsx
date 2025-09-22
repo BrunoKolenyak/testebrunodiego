@@ -91,7 +91,7 @@ const ProductsSection = () => {
 
             <div className="text-center mb-8">
               <img
-                src="https://conf-footb-m7dxay.manus.space/assets/full-method-visual-C3UM_UfK.png"
+                src="https://customer-assets.emergentagent.com/job_football-carousel/artifacts/r0hkjmwt_MODULES%20COVER-3.png"
                 alt="The Full Method"
                 className="w-48 h-auto mx-auto mb-6 rounded-lg shadow-xl"
               />
