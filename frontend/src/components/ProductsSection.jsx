@@ -162,8 +162,8 @@ const ProductsSection = () => {
             <strong>Not sure which option is right for you?</strong>
           </p>
           <p className="text-gray-400">
-            The Parents Blueprint will give you the support you need to work on your child's mindset. 
-            The Full Method has all the player's modules too, to educate the players with practical home works.
+            The Parents Blueprint is everything you need to know to support your child's journey... step by step. 
+            The Full Method includes all the player's modules too, to educate the players with practical homework.
           </p>
         </div>
       </div>
