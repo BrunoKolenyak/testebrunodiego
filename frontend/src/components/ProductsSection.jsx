@@ -119,9 +119,8 @@ const ProductsSection = () => {
                   "70+ video lessons for young players",
                   "Interactive quizzes and assessments",
                   "Daily mindset exercises (10-15 minutes)",
-                  "Monthly progress tracking worksheets",
+                  "EXCLUSIVE APP TO TRACK PROGRESS AND DATA!",
                   "Exclusive bonus workshops with specialists",
-                  "48-hour response time for questions",
                   "Mobile and desktop friendly platform",
                   "One year access with all updates"
                 ].map((feature, index) => (
