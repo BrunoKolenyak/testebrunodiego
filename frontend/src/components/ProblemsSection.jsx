@@ -1,22 +1,28 @@
 import React from "react";
 
+import { Brain, AlertTriangle, Target, HelpCircle } from "lucide-react";
+
 const ProblemsSection = () => {
   const problems = [
     {
       title: "LACKS CONFIDENCE DURING MATCHES",
-      description: "Your child plays brilliantly in training but freezes up during games, second-guessing every decision."
+      description: "Your child plays brilliantly in training but freezes up during games, second-guessing every decision.",
+      icon: Brain
     },
     {
       title: "FEAR OF MAKING MISTAKES",
-      description: "They're so afraid of getting it wrong that they play it safe, never showing their true potential."
+      description: "They're so afraid of getting it wrong that they play it safe, never showing their true potential.",
+      icon: AlertTriangle
     },
     {
       title: "NOT PERFORMING TO THEIR POTENTIAL",
-      description: "You know they have the skill, but something is holding them back from playing their best football."
+      description: "You know they have the skill, but something is holding them back from playing their best football.",
+      icon: Target
     },
     {
       title: "YOU FEEL HELPLESS TO SUPPORT",
-      description: "You want to help but don't know what to say or do without making things worse."
+      description: "You want to help but don't know what to say or do without making things worse.",
+      icon: HelpCircle
     }
   ];
 
