@@ -42,28 +42,37 @@ const StatsSection = () => {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => (
-            <div 
-              key={index}
-              className="text-center p-6 bg-gray-900/30 rounded-xl border border-gray-800 transition-all duration-300"
-              style={{ 
-                borderColor: 'rgba(229, 9, 20, 0.3)' 
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
-              }}
-            >
-              <h3 className="text-xl font-bold text-white mb-4">
-                {stat.title}
-              </h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                {stat.description}
-              </p>
-            </div>
-          ))}
+          {stats.map((stat, index) => {
+            const IconComponent = stat.icon;
+            return (
+              <div 
+                key={index}
+                className="text-center p-6 bg-gray-900/30 rounded-xl border border-gray-800 transition-all duration-300"
+                style={{ 
+                  borderColor: 'rgba(229, 9, 20, 0.3)' 
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
+                }}
+              >
+                <div className="flex justify-center mb-4">
+                  <IconComponent 
+                    className="w-12 h-12" 
+                    style={{ color: '#E50914' }}
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {stat.title}
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {stat.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
         {/* Numbers */}
