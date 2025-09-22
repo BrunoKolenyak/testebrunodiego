@@ -3,20 +3,20 @@ import React from "react";
 const ProblemsSection = () => {
   const problems = [
     {
-      title: "OVERTHINK MISTAKES, HURTING THEIR PERFORMANCE",
-      description: "Your child dwells on every mistake, affecting their next play"
+      title: "LACKS CONFIDENCE DURING MATCHES",
+      description: "Your child plays brilliantly in training but freezes up during games, second-guessing every decision."
     },
     {
-      title: "HAVE TALENT BUT FREEZE IN MATCHES/TRIALS",
-      description: "They show brilliance in training but can't perform when it matters"
+      title: "FEAR OF MAKING MISTAKES",
+      description: "They're so afraid of getting it wrong that they play it safe, never showing their true potential."
     },
     {
-      title: "AVOID PHYSICAL CHALLENGES DUE TO FEAR",
-      description: "Fear of getting hurt holds them back from playing their natural game"
+      title: "NOT PERFORMING TO THEIR POTENTIAL",
+      description: "You know they have the skill, but something is holding them back from playing their best football."
     },
     {
-      title: "LACK CONFIDENCE IN CRUCIAL MOMENTS",
-      description: "They hesitate when they should be decisive, missing opportunities"
+      title: "YOU FEEL HELPLESS TO SUPPORT",
+      description: "You want to help but don't know what to say or do without making things worse."
     }
   ];
 
@@ -24,14 +24,23 @@ const ProblemsSection = () => {
     <section className="bg-black py-20">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-          IS YOUR CHILD <span className="text-red-500">STRUGGLING WITH:</span>
+          IS YOUR CHILD <span style={{ color: '#E50914' }}>STRUGGLING WITH:</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {problems.map((problem, index) => (
             <div 
               key={index}
-              className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-red-500/30 transition-all duration-300 transform hover:scale-105"
+              className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 transition-all duration-300 transform hover:scale-105"
+              style={{ 
+                borderColor: 'rgba(229, 9, 20, 0.3)' 
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.5)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(229, 9, 20, 0.3)';
+              }}
             >
               <h3 className="text-white font-bold text-lg mb-4 leading-tight">
                 {problem.title}

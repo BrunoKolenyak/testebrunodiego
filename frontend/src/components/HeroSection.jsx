@@ -21,7 +21,7 @@ const HeroSection = () => {
           <h1 className="text-6xl lg:text-7xl font-bold mb-8 leading-tight">
             THE<br />
             CONFIDENT<br />
-            <span className="text-red-500">FOOTBALLER</span>
+            <span style={{ color: '#E50914' }}>FOOTBALLER</span>
           </h1>
           
           <h2 className="text-3xl lg:text-4xl font-semibold mb-6 leading-tight">
@@ -34,7 +34,8 @@ const HeroSection = () => {
           
           <Button 
             size="lg" 
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+            style={{ backgroundColor: '#E50914' }}
+            className="hover:opacity-90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
           >
             <Play className="w-5 h-5 mr-2" />
             Choose Your Path Below
@@ -43,7 +44,7 @@ const HeroSection = () => {
           <div className="flex items-center space-x-8 mt-8 text-sm">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 text-yellow-500">⭐</div>
-              <span>Trusted by 1000+ families</span>
+              <span>Trusted by real families</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 text-green-500">✓</div>

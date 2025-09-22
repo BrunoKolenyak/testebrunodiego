@@ -104,7 +104,12 @@ const SocialProofCarousel = () => {
             >
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="w-full flex-shrink-0">
-                  <div className="bg-gray-900/80 border border-gray-800 rounded-xl p-8 mx-4 backdrop-blur-sm hover:border-red-500/30 transition-all duration-300">
+                  <div 
+                    className="bg-gray-900/80 border border-gray-800 rounded-xl p-8 mx-4 backdrop-blur-sm transition-all duration-300"
+                    style={{ 
+                      borderColor: 'rgba(229, 9, 20, 0.3)' 
+                    }}
+                  >
                     <div className="flex flex-col lg:flex-row items-center gap-8">
                       {/* WhatsApp Image */}
                       <div className="w-full lg:w-1/2">
@@ -117,7 +122,7 @@ const SocialProofCarousel = () => {
                       
                       {/* Testimonial Content */}
                       <div className="w-full lg:w-1/2 text-center lg:text-left">
-                        <h4 className="text-2xl font-bold text-red-500 mb-4">
+                        <h4 className="text-2xl font-bold mb-4" style={{ color: '#E50914' }}>
                           {testimonial.title}
                         </h4>
                         <p className="text-lg text-gray-300 leading-relaxed">
@@ -134,7 +139,8 @@ const SocialProofCarousel = () => {
           {/* Navigation Buttons */}
           <Button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 text-white border-none shadow-lg z-10"
+            style={{ backgroundColor: '#E50914' }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full hover:opacity-90 text-white border-none shadow-lg z-10"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -142,7 +148,8 @@ const SocialProofCarousel = () => {
           
           <Button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 text-white border-none shadow-lg z-10"
+            style={{ backgroundColor: '#E50914' }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full hover:opacity-90 text-white border-none shadow-lg z-10"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6" />
@@ -157,9 +164,12 @@ const SocialProofCarousel = () => {
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentSlide 
-                  ? 'bg-red-500 scale-110' 
-                  : 'bg-gray-600 hover:bg-gray-500'
+                  ? 'scale-110' 
+                  : 'hover:bg-gray-500'
               }`}
+              style={{ 
+                backgroundColor: index === currentSlide ? '#E50914' : '#666' 
+              }}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}

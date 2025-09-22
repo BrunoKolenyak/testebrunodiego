@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             A UNIQUE APPROACH FROM SOMEONE WHO{" "}
-            <span className="text-red-500">UNDERSTANDS BOTH SIDES</span>
+            <span style={{ color: '#E50914' }}>UNDERSTANDS BOTH SIDES</span>
           </h2>
         </div>
 
@@ -26,32 +26,41 @@ const AboutSection = () => {
             <h3 className="text-3xl lg:text-4xl font-bold text-white mb-2">
               DIEGO PAGLIUSO
             </h3>
-            <p className="text-xl text-red-500 font-semibold mb-8">
+            <p className="text-xl font-semibold mb-8" style={{ color: '#E50914' }}>
               Mindset Specialist
             </p>
 
-            <div className="space-y-4 mb-8">
-              <div className="flex items-center justify-start space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                <span className="text-lg text-gray-300">Elite Academy Coach</span>
+            <div className="space-y-6 mb-8 text-left">
+              <div>
+                <div className="flex items-center space-x-3 mb-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#E50914' }}></div>
+                  <span className="text-lg text-gray-300 font-semibold">Elite Academy Coach</span>
+                </div>
+                <p className="text-gray-400 text-sm ml-5">
+                  With experience coaching at professional Premier League academies, I've helped develop players who have gone on to achieve at the highest levels.
+                </p>
               </div>
-              <div className="flex items-center justify-start space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                <span className="text-lg text-gray-300">Ex-Player</span>
+              
+              <div>
+                <div className="flex items-center space-x-3 mb-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#E50914' }}></div>
+                  <span className="text-lg text-gray-300 font-semibold">Football Parent</span>
+                </div>
+                <p className="text-gray-400 text-sm ml-5">
+                  As a parent with a child in the academy system, I've sat where you sit now. I've made the same mistakes and felt the same worries you're experiencing.
+                </p>
               </div>
-              <div className="flex items-center justify-start space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                <span className="text-lg text-gray-300">Football Parent</span>
-              </div>
-              <div className="flex items-center justify-start space-x-3">
-                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                <span className="text-lg text-gray-300">Mindset Specialist</span>
+              
+              <div>
+                <div className="flex items-center space-x-3 mb-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#E50914' }}></div>
+                  <span className="text-lg text-gray-300 font-semibold">Mindset Specialist</span>
+                </div>
+                <p className="text-gray-400 text-sm ml-5">
+                  I've combined my coaching expertise with practical mindset techniques that work specifically for young footballers aged 8-16.
+                </p>
               </div>
             </div>
-
-            <p className="text-lg text-gray-300 leading-relaxed">
-              I've combined my coaching expertise with practical mindset techniques that work specifically for young footballers aged 8-16.
-            </p>
           </div>
         </div>
       </div>
