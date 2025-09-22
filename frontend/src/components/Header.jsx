@@ -10,6 +10,11 @@ const Header = () => {
               src="https://customer-assets.emergentagent.com/job_football-carousel/artifacts/zgo4nwxj_final-all-red-logo.png"
               alt="The Confident Footballer Logo"
               className="w-8 h-8 object-contain"
+              style={{
+                mixBlendMode: 'multiply',
+                filter: 'brightness(0) saturate(100%) invert(18%) sepia(90%) saturate(7500%) hue-rotate(356deg) brightness(95%) contrast(114%)',
+                backgroundColor: 'transparent'
+              }}
             />
             <span className="text-white font-medium text-sm">
               The #1 Mindset Programme for Young Footballers
