@@ -1,22 +1,27 @@
 import React from "react";
+import { Award, Clock, TrendingUp, Users } from "lucide-react";
 
 const StatsSection = () => {
   const stats = [
     {
       title: "Proven Techniques",
-      description: "Based on science & real coaching experience from Premier League academies"
+      description: "Based on science & real coaching experience from Premier League academies",
+      icon: Award
     },
     {
       title: "One Year Access",
-      description: "Full access to the platform with all updates and new content"
+      description: "Full access to the platform with all updates and new content",
+      icon: Clock
     },
     {
       title: "Real Improvements",
-      description: "Visible changes in confidence and consistency within weeks"
+      description: "Visible changes in confidence and consistency within weeks",
+      icon: TrendingUp
     },
     {
       title: "Parent & Player Modules",
-      description: "Comprehensive guidance for both parents and young footballers"
+      description: "Comprehensive guidance for both parents and young footballers",
+      icon: Users
     }
   ];
 
