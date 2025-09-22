@@ -23,7 +23,7 @@ const FAQSection = () => {
     },
     {
       question: "How long do I have access for?",
-      answer: "The Parents Blueprint is yours forever once downloaded. The Full Method includes 1 year access to all features including App and course."
+      answer: "Both products include 1 year access to the platform. The Parents Blueprint gives you access to parent-focused content, while The Full Method includes all features including the exclusive App and full course content."
     }
   ];
 
