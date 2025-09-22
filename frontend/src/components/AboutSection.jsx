@@ -12,12 +12,12 @@ const AboutSection = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-          {/* Diego's Image */}
-          <div className="w-full lg:w-1/2">
+          {/* Diego's Image - Centered */}
+          <div className="w-full lg:w-1/2 flex justify-center">
             <img
-              src="https://conf-footb-m7dxay.manus.space/assets/diego-profile-CbHjlvzy.png"
+              src="https://customer-assets.emergentagent.com/job_football-carousel/artifacts/yi0jmr06_Generated%20Image%20September%2015%2C%202025%20-%209_41AM.png"
               alt="Diego Pagliuso"
-              className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+              className="w-full max-w-md rounded-2xl shadow-2xl"
             />
           </div>
 
@@ -31,19 +31,19 @@ const AboutSection = () => {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="flex items-center justify-center lg:justify-start space-x-3">
+              <div className="flex items-center justify-start space-x-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                 <span className="text-lg text-gray-300">Elite Academy Coach</span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start space-x-3">
+              <div className="flex items-center justify-start space-x-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                 <span className="text-lg text-gray-300">Ex-Player</span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start space-x-3">
+              <div className="flex items-center justify-start space-x-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                 <span className="text-lg text-gray-300">Football Parent</span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start space-x-3">
+              <div className="flex items-center justify-start space-x-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                 <span className="text-lg text-gray-300">Mindset Specialist</span>
               </div>
@@ -53,15 +53,6 @@ const AboutSection = () => {
               I've combined my coaching expertise with practical mindset techniques that work specifically for young footballers aged 8-16.
             </p>
           </div>
-        </div>
-
-        {/* Decorative Brain Element */}
-        <div className="text-center mt-16">
-          <img
-            src="https://conf-footb-m7dxay.manus.space/assets/neon-brain-element-Cip_7pJs.png"
-            alt="Neon Brain"
-            className="mx-auto w-24 h-24 opacity-80"
-          />
         </div>
       </div>
     </section>
