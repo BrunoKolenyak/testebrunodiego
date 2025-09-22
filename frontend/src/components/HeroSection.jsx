@@ -43,11 +43,11 @@ const HeroSection = () => {
           
           <div className="flex items-center space-x-8 mt-8 text-sm">
             <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 text-yellow-500">⭐</div>
+              <Star className="w-4 h-4 text-yellow-500 fill-current" />
               <span>Trusted by real families</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 text-green-500">✓</div>
+              <CheckCircle className="w-4 h-4 text-green-500" />
               <span>30-day transformation</span>
             </div>
           </div>
