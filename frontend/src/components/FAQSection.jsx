@@ -22,8 +22,8 @@ const FAQSection = () => {
       answer: "Most parents notice visible changes within 3-4 weeks with consistent application of the strategies."
     },
     {
-      question: "Do I get lifetime access?",
-      answer: "The Parents Blueprint is yours forever once downloaded. The Full Method includes one year access to all features including App and course."
+      question: "How long do I have access for?",
+      answer: "The Parents Blueprint is yours forever once downloaded. The Full Method includes 1 year access to all features including App and course."
     }
   ];
 
