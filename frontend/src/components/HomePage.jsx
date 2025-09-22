@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import ProblemsSection from "./ProblemsSection";
+import ConsequencesSection from "./ConsequencesSection";
 import SocialProofCarousel from "./SocialProofCarousel";
 import AboutSection from "./AboutSection";
 import ProductsSection from "./ProductsSection";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Header />
       <HeroSection />
       <ProblemsSection />
+      <ConsequencesSection />
       <SocialProofCarousel />
       <AboutSection />
       <ProductsSection />
